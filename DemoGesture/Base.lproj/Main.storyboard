@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DemoGesture" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,75 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="monkey.png" translatesAutoresizingMaskIntoConstraints="NO" id="YsP-S2-pMo">
+                                <rect key="frame" x="55" y="59" width="168" height="168"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="pGj-5W-GgG" appends="YES" id="6As-yZ-iSr"/>
+                                    <outletCollection property="gestureRecognizers" destination="u4m-Qq-fNC" appends="YES" id="Jyg-JU-2Oc"/>
+                                    <outletCollection property="gestureRecognizers" destination="umP-Aj-Xec" appends="YES" id="mqU-al-xka"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banana.png" translatesAutoresizingMaskIntoConstraints="NO" id="qfF-UV-tT1">
+                                <rect key="frame" x="75" y="301" width="175" height="175"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="6UI-u3-m07" appends="YES" id="EWr-ah-izd"/>
+                                    <outletCollection property="gestureRecognizers" destination="rTa-fn-lMZ" appends="YES" id="1Cn-f4-BSo"/>
+                                    <outletCollection property="gestureRecognizers" destination="36W-AU-3o7" appends="YES" id="LR2-rD-6Iy"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="bananaPan" destination="6UI-u3-m07" id="e8V-WQ-bcv"/>
+                        <outlet property="monkeyPan" destination="pGj-5W-GgG" id="zqv-nD-2P0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="pGj-5W-GgG">
+                    <connections>
+                        <action selector="handlePan:" destination="BYZ-38-t0r" id="XAH-i0-zYH"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="Zcq-CW-138"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="6UI-u3-m07">
+                    <connections>
+                        <action selector="handlePan:" destination="BYZ-38-t0r" id="Z95-8w-762"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="K2x-cz-vvF"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pinchGestureRecognizer id="u4m-Qq-fNC">
+                    <connections>
+                        <action selector="handlePinch:" destination="BYZ-38-t0r" id="ObM-7A-AML"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="WYz-3c-czh"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="umP-Aj-Xec">
+                    <connections>
+                        <action selector="handleRotate:" destination="BYZ-38-t0r" id="5SP-CD-aRw"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="vVa-Ze-4U7"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <pinchGestureRecognizer id="rTa-fn-lMZ">
+                    <connections>
+                        <action selector="handlePinch:" destination="BYZ-38-t0r" id="UeW-2j-xR9"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="SvA-IV-P3W"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="36W-AU-3o7">
+                    <connections>
+                        <action selector="handleRotate:" destination="BYZ-38-t0r" id="oSN-hG-0hf"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="N6K-zn-Jc5"/>
+                    </connections>
+                </rotationGestureRecognizer>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="banana.png" width="175" height="175"/>
+        <image name="monkey.png" width="168" height="168"/>
+    </resources>
 </document>

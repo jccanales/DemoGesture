@@ -14,6 +14,12 @@
 		3D44E0501C56F6A100745A95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D44E04E1C56F6A100745A95 /* LaunchScreen.storyboard */; };
 		3D44E05B1C56F6A100745A95 /* DemoGestureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D44E05A1C56F6A100745A95 /* DemoGestureTests.swift */; };
 		3D44E0661C56F6A100745A95 /* DemoGestureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D44E0651C56F6A100745A95 /* DemoGestureUITests.swift */; };
+		3D44E0791C57171800745A95 /* banana.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D44E0731C57171800745A95 /* banana.png */; };
+		3D44E07A1C57171800745A95 /* banana@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D44E0741C57171800745A95 /* banana@2x.png */; };
+		3D44E07B1C57171800745A95 /* chomp.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3D44E0751C57171800745A95 /* chomp.caf */; };
+		3D44E07C1C57171800745A95 /* hehehe1.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3D44E0761C57171800745A95 /* hehehe1.caf */; };
+		3D44E07D1C57171800745A95 /* monkey.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D44E0771C57171800745A95 /* monkey.png */; };
+		3D44E07E1C57171800745A95 /* monkey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D44E0781C57171800745A95 /* monkey@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		3D44E0611C56F6A100745A95 /* DemoGestureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoGestureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D44E0651C56F6A100745A95 /* DemoGestureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoGestureUITests.swift; sourceTree = "<group>"; };
 		3D44E0671C56F6A100745A95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D44E0731C57171800745A95 /* banana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = banana.png; path = ../../Downloads/MonkeyPinchResources/banana.png; sourceTree = "<group>"; };
+		3D44E0741C57171800745A95 /* banana@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "banana@2x.png"; path = "../../Downloads/MonkeyPinchResources/banana@2x.png"; sourceTree = "<group>"; };
+		3D44E0751C57171800745A95 /* chomp.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = chomp.caf; path = ../../Downloads/MonkeyPinchResources/chomp.caf; sourceTree = "<group>"; };
+		3D44E0761C57171800745A95 /* hehehe1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = hehehe1.caf; path = ../../Downloads/MonkeyPinchResources/hehehe1.caf; sourceTree = "<group>"; };
+		3D44E0771C57171800745A95 /* monkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = monkey.png; path = ../../Downloads/MonkeyPinchResources/monkey.png; sourceTree = "<group>"; };
+		3D44E0781C57171800745A95 /* monkey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "monkey@2x.png"; path = "../../Downloads/MonkeyPinchResources/monkey@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +89,7 @@
 		3D44E0391C56F6A000745A95 = {
 			isa = PBXGroup;
 			children = (
+				3D44E07F1C57173000745A95 /* Assets */,
 				3D44E0441C56F6A100745A95 /* DemoGesture */,
 				3D44E0591C56F6A100745A95 /* DemoGestureTests */,
 				3D44E0641C56F6A100745A95 /* DemoGestureUITests */,
@@ -123,6 +136,19 @@
 				3D44E0671C56F6A100745A95 /* Info.plist */,
 			);
 			path = DemoGestureUITests;
+			sourceTree = "<group>";
+		};
+		3D44E07F1C57173000745A95 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3D44E0731C57171800745A95 /* banana.png */,
+				3D44E0741C57171800745A95 /* banana@2x.png */,
+				3D44E0751C57171800745A95 /* chomp.caf */,
+				3D44E0761C57171800745A95 /* hehehe1.caf */,
+				3D44E0771C57171800745A95 /* monkey.png */,
+				3D44E0781C57171800745A95 /* monkey@2x.png */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +219,7 @@
 				TargetAttributes = {
 					3D44E0411C56F6A100745A95 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = GGA47A9M92;
 					};
 					3D44E0551C56F6A100745A95 = {
 						CreatedOnToolsVersion = 7.2;
@@ -229,9 +256,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D44E07D1C57171800745A95 /* monkey.png in Resources */,
+				3D44E07B1C57171800745A95 /* chomp.caf in Resources */,
 				3D44E0501C56F6A100745A95 /* LaunchScreen.storyboard in Resources */,
 				3D44E04D1C56F6A100745A95 /* Assets.xcassets in Resources */,
+				3D44E07E1C57171800745A95 /* monkey@2x.png in Resources */,
+				3D44E07A1C57171800745A95 /* banana@2x.png in Resources */,
+				3D44E0791C57171800745A95 /* banana.png in Resources */,
 				3D44E04B1C56F6A100745A95 /* Main.storyboard in Resources */,
+				3D44E07C1C57171800745A95 /* hehehe1.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,10 +432,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DemoGesture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.upc.DemoGesture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -410,10 +447,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DemoGesture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.upc.DemoGesture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
